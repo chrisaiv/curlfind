@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  
+  p Welcome to #{title}
+  
+  #message
+  
+  #dropzone
+    form(action="/upload", method="post", class="dropzone", id="demo-upload")
+
