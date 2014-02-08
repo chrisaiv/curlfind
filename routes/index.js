@@ -82,10 +82,12 @@ exports.upload = function(req, res, next){
 			  headers: {
 				  "Content-Length": MASHAPE.LENGTH,
 				  "X-Mashape-Authorization": MASHAPE.API_KEY,
+				  /*
 		        'cache-control': 'max-age=0',
 		        'accept-encoding': 'gzip,deflate,sdch',
 		        'accept-language': 'en-US,en;q=0.8',
 		        'accept-charset': 'ISO-8859-1,utf-8;q=0.7,*;q=0.3'
+				  */
 			  }			  
 			};
 			http.request(options, function(res) {
